@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../user';
 
 @Component({
   selector: 'app-home',
@@ -6,16 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
-userName:string="Alaa"
-Link="http://www.facebook.com"
-imgsrc="../../assets/download.jfif"
-Salary:number=5000
-sayhi()
+user:User=
 {
-  alert("hi");
-}
-test(e:Event)
-{
-console.log(e);  
+name:'alaa',
+age:25
 }
 }
