@@ -1,1 +1,67 @@
-{{user.name}}
+<style>
+    .changebackground
+    {
+        background-color: red;
+    }
+</style>
+<!--Strcture Directive-->
+<!--
+1-*ngFor
+2-*ngif
+3-ngswitch
+4-attribute diractive [ngclass,ngstyle]
+
+-->
+<!-- <ul>
+    <li *ngFor="let i of name">
+{{i}}
+    </li>
+</ul> -->
+
+<!-- <div  class="container">
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let user of names">
+            <div class="user">
+<h2>{{user.name}}</h2>
+<p>{{user.age}}</p>
+<p>{{user.Salary}}</p>
+
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <table class="table">
+    <thead>
+<th>#</th>
+<th>Name</th>
+<th>Age</th>
+<th>Salary</th>
+
+    </thead>
+    <ng-template #demo>
+        please contact with admin
+                </ng-template>
+    <tbody *ngIf="test=='asdsd';else demo">
+        <tr [class.bg-info]="even" [class.bg-success]="odd" *ngFor="let user of names;let x=index;let even=even;let odd=odd;">
+        <td  >{{x+1}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.Salary}}</td>
+        </tr>
+       
+    </tbody>
+    
+</table> -->
+
+<!-- <div [ngSwitch]="num">
+    <div *ngSwitchCase="'1'">One</div>
+    <div *ngSwitchCase="'2'">Two</div>
+    <div *ngSwitchCase="'3'">Three</div>
+    <div *ngSwitchCase="'4'">Four</div>
+    <div *ngSwitchCase="'5'">Five</div>
+    <div *ngSwitchDefault>This is Default</div>
+  </div> -->
+
+  <div [ngClass]="{changebackground:Salary>2000}">
+sadsad
+  </div>
